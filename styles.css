@@ -1,104 +1,99 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-
-html, body {
+html,
+body {
   height: 100%;
 }
 
-body{
-
+body {
   background-color: gray;
   border: 1px solid black;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-    }
-
- /*HEADER*/
-header {
-    width: 100%;
-    background-color: black;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    flex-wrap: wrap;
-    
 }
 
+/*HEADER*/
+header {
+  width: 100%;
+  background-color: black;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  flex-wrap: wrap;
+}
 
-.inicio a{
-    text-decoration: none;
-    color: white;
-    font-family: "Press Start 2P", system-ui;
-    font-size: 30px;
-
+.inicio a {
+  text-decoration: none;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 30px;
 }
 
 .inicio a:hover {
-    color: rgb(255, 251, 0);
+  color: rgb(255, 251, 0);
 }
 
 /*nav header*/
 
-.nav-header{
-    display: flex;
-    gap: 30px;
+.nav-header {
+  display: flex;
+  gap: 30px;
 }
-.nav-header a{
-    text-decoration: none;
-    color: white;
-    font-family: "Press Start 2P", system-ui; 
-    font-size: 10px;
-    font-weight: bold;
-
+.nav-header a {
+  text-decoration: none;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
+  font-weight: bold;
 }
 .nav-header a:hover {
-    color: rgb(251, 255, 0);
+  color: rgb(251, 255, 0);
 }
 
 /*MAIN INDEX*/
 
-main {     
+main {
   background-color: gray;
-  flex: 1; 
+  flex: 1;
   padding-bottom: 20px;
 }
 
-h1{
-    color: yellow;
-    font-size: 50px;
-    font-family: "Michroma", sans-serif;
-    text-align: center;
+h1 {
+  color: yellow;
+  font-size: 50px;
+  font-family: "Michroma", sans-serif;
+  text-align: center;
 }
 
-p{
-    margin-top: 10px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: medium;
-    color: aliceblue;
+p {
+  margin-top: 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+  color: aliceblue;
 }
 
-.escenarios-iconicos{
-    text-align: center;
-    color: white;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    font-size: 20;
-    font-family: cursive;
+.escenarios-iconicos {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-family: cursive;
 }
 
-.mustafar{
-
-    margin: auto;
-    width: 800px;
-    height: 400;
+.mustafar {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: auto;
 }
 
 /*FOOTER*/
@@ -107,10 +102,9 @@ footer {
   background-color: rgb(7, 6, 6);
   color: white;
   width: 100%;
-  }
+}
 
-
-.footer{
+.footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -118,48 +112,46 @@ footer {
   gap: 20px;
 }
 
-.fines{
+.fines {
   flex: 1;
   min-width: 200px;
 }
-.fines h2{
+.fines h2 {
   color: rgb(238, 255, 6);
   font-family: initial;
   font-size: 20px;
   margin: 0;
-    
 }
 
-.redes{
-    display: flex;
-    margin-left: 43%;
+.redes {
+  display: flex;
+  margin-left: 43%;
 }
-#redes ul{
-
+#redes ul {
   list-style: none;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   align-items: center;
-    }
+}
 
-#redes li{
+#redes li {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-#redes li a{
-    text-decoration: none;
-    color: white;
-    font-family: "Press Start 2P", system-ui; 
-    font-size: 10px;
+#redes li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 10px;
 }
 
 #redes li img {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .derechos {
@@ -170,32 +162,29 @@ footer {
 }
 
 .derechos h3 {
-
   margin: 0;
   font-weight: normal;
-
 }
 
 /*PELICULAS*/
 
-.peliculas{
-    color: yellow;
-    text-align: left;
-    font-family: "Michroma", sans-serif;
+.peliculas {
+  color: yellow;
+  text-align: left;
+  font-family: "Michroma", sans-serif;
 }
 
-.intro-pelis{
-    text-align: center;
-    font-size: 20px;
-    font-family: "BenchNine", sans-serif;
+.intro-pelis {
+  text-align: center;
+  font-size: 20px;
+  font-family: "BenchNine", sans-serif;
 }
 
-.orden-Pelis{
-    color: yellow;
-    text-align: left;
-    font-family: "Michroma", sans-serif;
-    margin-bottom: 10px;
-
+.orden-Pelis {
+  color: yellow;
+  text-align: left;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 10px;
 }
 
 /*orden cronologico pelis*/
@@ -220,51 +209,50 @@ footer {
   font-family: "Michroma", sans-serif;
 }
 
-.episodio p{
-  font-family:monospace;
+.episodio p {
+  font-family: monospace;
   font-size: 15px;
   padding: 20px;
 }
 
 /*PERSONAJES*/
 
-.personajes{
-    color: yellow;
-    text-align: left;
-    font-family: "Michroma", sans-serif;
+.personajes {
+  color: yellow;
+  text-align: left;
+  font-family: "Michroma", sans-serif;
 }
 
-.Personajes1{
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.Personajes1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-.container{
-    padding: 20px;
-    display: grid;
-    grid-template-columns:  repeat(auto-fit, minmax(250px,1fr));
-    gap: 1rem;
-    justify-content: center;
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  justify-content: center;
 }
 
-.card{
-position: relative;
-overflow: hidden;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-width: 100%;
-max-width: 300px;
+.card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 300px;
 }
 
-.card img{
-    width: 100%;
-    height: 350px;
-    display: block;
-    object-fit: cover;
-
+.card img {
+  width: 100%;
+  height: 350px;
+  display: block;
+  object-fit: cover;
 }
 
-.text{
+.text {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -277,11 +265,11 @@ max-width: 300px;
 
 /*JUEGOS*/
 
-.juegos{
-    color: yellow;
-    text-align: left;
-    font-family: "Michroma", sans-serif;
-    margin-bottom: 10px;
+.juegos {
+  color: yellow;
+  text-align: left;
+  font-family: "Michroma", sans-serif;
+  margin-bottom: 10px;
 }
 
 .juego {
@@ -306,21 +294,21 @@ max-width: 300px;
   font-weight: bold;
 }
 
-.juego p{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.juego p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 17px;
   padding: 20px;
 }
 
 /*CONTACTO*/
 
-.contacto{
+.contacto {
   color: yellow;
   text-align: left;
   font-family: "Michroma", sans-serif;
 }
 
-.consulta{
+.consulta {
   text-align: center;
   max-width: 600px;
 }
@@ -332,7 +320,7 @@ form {
   align-items: center;
 }
 
-.nombre{
+.nombre {
   margin-top: 30px;
 }
 
@@ -346,7 +334,6 @@ form {
   color: aliceblue;
 }
 
-
 #nombre,
 #mail,
 #mensaje {
@@ -355,22 +342,19 @@ form {
   font-size: 1em;
   border-radius: 5px;
   border: 1px solid #f8f8f8;
-  
 }
-
 
 #mensaje {
   height: 200px;
   resize: vertical;
 }
 
-
 .boton {
   width: 300px;
   height: 50px;
   background-color: #fbff06;
   color: rgb(0, 0, 0);
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -382,32 +366,33 @@ form {
   background-color: #666;
 }
 
-@media (max-width:480px){ /*Celulares*/
-/*header*/
-  header{
-  flex-direction: column;
-  align-items: flex-start;
-}
+@media (max-width: 480px) {
+  /*Celulares*/
+  /*header*/
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-.nav-header{
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  gap: 10PX;
-  margin-top:  10px;
-  align-items: center;
-}
+  .nav-header {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
 
-.inicio {
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  gap: 10PX;
-  margin-top:  10px;
-  align-items: center;
-}
-/*footer*/
-.footer {
+  .inicio {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  /*footer*/
+  .footer {
     flex-direction: column;
     align-items: flex-start;
   }
@@ -429,7 +414,61 @@ form {
     text-align: center;
   }
 
-/*personajes*/
+  /*index*/
+  .mustafar {
+    width: 100%;
+    height: auto;
+  }
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .escenarios-iconicos {
+    font-size: 18px;
+  }
+
+/*peliculas*/
+.intro-pelis {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .orden-pelis {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .episodio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .episodio-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+
+  .episodio h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .episodio p {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: justify;
+  }
+
+  /*personajes*/
 
   .card img {
     height: 100px;
@@ -440,8 +479,32 @@ form {
     padding: 8px;
   }
 
+    /*juegos*/
+  .juego {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .juego-img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 10px;
+  }
+
+  
+
+  .juego p,
+  .juego h3 {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+
+
   /*contacto*/
-   #nombre,
+  #nombre,
   #mail,
   #mensaje {
     width: 100%;
@@ -469,34 +532,40 @@ form {
   }
 }
 
-@media (max-width:1024px){ /*Tablets*/
-/*header*/
-  header{
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.nav-header{
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  gap: 10PX;
-  margin-top:  10px;
-  align-items: center;
-}
-
-.inicio {
-  flex-direction: column;
-  width: 100%;
-  align-items: flex-start;
-  gap: 10PX;
-  margin-top:  10px;
-  align-items: center;
-}
-/*footer*/
-.footer {
+@media (max-width: 1024px) {
+  /*Tablets*/
+  /*header*/
+  header {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .nav-header {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .inicio {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+  }
+  /*footer*/
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: #222;
+    color: white;
+    gap: 20px;
   }
 
   #redes ul {
@@ -515,10 +584,56 @@ form {
   .derechos {
     text-align: center;
   }
+  /*index*/
+  .mustafar {
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
 
-/*personajes*/
+  h1 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .escenarios-iconicos {
+    font-size: 18px;
+  }
+
+  /*peliculas*/
+
+.episodio {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .episodio-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .intro-pelis,
+  .orden-pelis {
+    padding: 0 20px;
+    font-size: 16px;
+  }
+
+  .episodio p,
+  .episodio h3 {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+}
+
+  /*personajes*/
   .card img {
-    height: 300px; 
+    height: 300px;
   }
 
   .text {
@@ -526,9 +641,30 @@ form {
     padding: 10px;
   }
 
+  /*juegos*/
+  .juego {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .juego-img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+
+
+  .juego p,
+  .juego h3 {
+    padding: 0 15px;
+    font-size: 15px;
+  }
+
 
   /*contacto*/
-   #nombre,
+  #nombre,
   #mail,
   #mensaje {
     width: 90%;
@@ -542,4 +678,3 @@ form {
     padding: 0 20px;
   }
 }
-
