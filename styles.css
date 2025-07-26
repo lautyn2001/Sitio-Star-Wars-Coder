@@ -366,8 +366,7 @@ form {
   background-color: #666;
 }
 
-@media (max-width: 480px) {
-  /*Celulares*/
+@media (max-width: 480px) { /*Celulares*/
   /*header*/
   header {
     flex-direction: column;
@@ -529,8 +528,7 @@ form {
   }
 }
 
-@media (max-width: 1024px) {
-  /*Tablets*/
+@media (max-width: 1024px) {/*Tablets*/
   /*header*/
   header {
     flex-direction: column;
