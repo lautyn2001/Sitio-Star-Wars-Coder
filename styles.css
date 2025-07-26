@@ -5,13 +5,19 @@
 
 }
 
-body{
-    position: relative;
-    background-color: gray;
-    border: 1px solid black;
-    min-height: 100vh;
-    padding-bottom: 120px ;
+
+html, body {
+  height: 100%;
 }
+
+body{
+
+  background-color: gray;
+  border: 1px solid black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+    }
 
  /*HEADER*/
 header {
@@ -36,7 +42,7 @@ header {
 }
 
 .inicio a:hover {
-    color: red;
+    color: rgb(255, 251, 0);
 }
 
 /*nav header*/
@@ -54,15 +60,15 @@ header {
 
 }
 .nav-header a:hover {
-    color: red;
+    color: rgb(251, 255, 0);
 }
 
 /*MAIN INDEX*/
 
-main {
-    background-color: gray;
-    justify-content: center;
-    min-height: 100%;
+main {     
+  background-color: gray;
+  flex: 1; 
+  padding-bottom: 20px;
 }
 
 h1{
@@ -98,12 +104,12 @@ p{
 /*FOOTER*/
 
 footer {
-    background-color: rgb(7, 6, 6);
-    color: white;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
+  background-color: rgb(7, 6, 6);
+  color: white;
+  width: 100%;
+  }
+
+
 .footer{
   display: flex;
   justify-content: space-between;
@@ -129,13 +135,7 @@ footer {
     margin-left: 43%;
 }
 #redes ul{
-  /*
-    width: 350px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-*/
+
   list-style: none;
   padding: 10px;
   display: flex;
@@ -170,11 +170,7 @@ footer {
 }
 
 .derechos h3 {
-   /* font-size: 12px;
-    font-family: "Savate", sans-serif;
-    font-style: normal;
-    text-align: center;
-   */  
+
   margin: 0;
   font-weight: normal;
 
@@ -198,12 +194,33 @@ footer {
     color: yellow;
     text-align: left;
     font-family: "Michroma", sans-serif;
+    margin-bottom: 10px;
 
 }
 
 /*orden cronologico pelis*/
+.episodio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
 
-/*EPISODIO1*/
+.episodio-img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+
+.episodio h3 {
+  font-size: 15px;
+  font-family: "Michroma", sans-serif;
+}
+
+
+/*EPISODIO1*//*
 .episodio1{
   display: flex;
   align-items: center;
@@ -273,16 +290,19 @@ footer {
 }
 
 .container{
-  padding: 20px;
+    padding: 20px;
     display: grid;
     grid-template-columns:  repeat(auto-fit, minmax(250px,1fr));
     gap: 1rem;
+    justify-content: center;
 }
 
 .card{
 position: relative;
 overflow: hidden;
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+width: 100%;
+max-width: 300px;
 }
 
 .card img{
@@ -301,6 +321,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   color: white;
   text-align: center;
   box-sizing: border-box;
+  padding: 10px;
 }
 
 /*JUEGOS*/
@@ -374,59 +395,70 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .consulta{
-  text-align: left;
-  font-family: "Michroma", sans-serif;
+  text-align: center;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 .nombre{
-  margin-top: 10px;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-}
-#nombre{
-  width: 500;
-  align-items: center;
-  align-items: center;
-  justify-items: center;
+  margin-top: 30px;
 }
 
-.mail{
-  margin-top: 20px;
-  text-align: center;
-}
-
-#mail{
-  width: 500;
-  align-items: center;
-}
-
-.mensaje{
-  margin-top: 20px;
-  text-align: center;
+.nombre,
+.mail,
+.mensaje {
   display: flex;
-  align-items: center;
-  margin-left: 32.5%;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+  color: aliceblue;
 }
 
 
-#mensaje{
-  width: 500;
-  height: 250px;
+#nombre,
+#mail,
+#mensaje {
+  width: 500px;
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #f8f8f8;
+  
 }
 
-.boton{
-  align-items: center;
-  justify-items: center;
-  margin-top: 20px;
-  text-align: center;
+
+#mensaje {
+  height: 200px;
+  resize: vertical;
+}
+
+
+.boton {
   width: 300px;
-  height: 50;
-margin-left: 42%;
+  height: 50px;
+  background-color: #fbff06;
+  color: rgb(0, 0, 0);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #666;
 }
 
 @media (max-width:480px){ /*Celulares*/
-header{
+/*header*/
+  header{
   flex-direction: column;
   align-items: flex-start;
 }
@@ -448,7 +480,7 @@ header{
   margin-top:  10px;
   align-items: center;
 }
-
+/*footer*/
 .footer {
     flex-direction: column;
     align-items: flex-start;
@@ -468,12 +500,52 @@ header{
   }
 
   .derechos {
+    text-align: center;
+  }
+
+/*personajes*/
+
+  .card img {
+    height: 100px;
+  }
+
+  .text {
+    font-size: 0.8em;
+    padding: 8px;
+  }
+
+  /*contacto*/
+   #nombre,
+  #mail,
+  #mensaje {
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .boton {
+    width: 100%;
+    font-size: 1em;
+    height: 45px;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .contacto {
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  .consulta {
+    font-size: 0.95em;
     text-align: center;
   }
 }
 
 @media (max-width:1024px){ /*Tablets*/
-header{
+/*header*/
+  header{
   flex-direction: column;
   align-items: flex-start;
 }
@@ -495,7 +567,7 @@ header{
   margin-top:  10px;
   align-items: center;
 }
-
+/*footer*/
 .footer {
     flex-direction: column;
     align-items: flex-start;
@@ -517,4 +589,31 @@ header{
   .derechos {
     text-align: center;
   }
+
+/*personajes*/
+  .card img {
+    height: 300px; /* más chico que en escritorio */
+  }
+
+  .text {
+    font-size: 0.9em;
+    padding: 10px;
+  }
+
+
+  /*contacto*/
+   #nombre,
+  #mail,
+  #mensaje {
+    width: 90%;
+  }
+
+  .boton {
+    width: 70%;
+  }
+
+  .consulta {
+    padding: 0 20px;
+  }
 }
+
