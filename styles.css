@@ -212,67 +212,18 @@ footer {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1/1;
+  margin-left: 10px;
 }
 
 .episodio h3 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: "Michroma", sans-serif;
 }
 
-
-/*EPISODIO1*//*
-.episodio1{
-  display: flex;
-  align-items: center;
-}
-
-.ep1{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 300px;
-   height: 300px;
-}
-
-.tit-ep1{
-    font-size: 15px;
-    font-family: "Michroma", sans-serif;
-}
-
-/*EPISODIO2*/
-
-.episodio2{
-  display: flex;
-  align-items: center;
-}
-
-.ep2{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 293px;
-   height: 293px;
-}
-
-.tit-ep2{
-    font-size: 15px;
-    font-family: "Michroma", sans-serif;
-}
-
-/*EPISODIO3*/
-
-.episodio3{
-  display: flex;
-  align-items: center;
-}
-
-.ep3{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 220px;
-}
-
-.tit-ep3{
-    font-size: 15px;
-    font-family: "Michroma", sans-serif;
+.episodio p{
+  font-family:monospace;
+  font-size: 15px;
+  padding: 20px;
 }
 
 /*PERSONAJES*/
@@ -330,60 +281,35 @@ max-width: 300px;
     color: yellow;
     text-align: left;
     font-family: "Michroma", sans-serif;
+    margin-bottom: 10px;
 }
 
-/*Outlaws*/
-
-.outlaws{
+.juego {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.outlawsjpg{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 200px;
-   height: 200px;   
+.juego-img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+  margin-left: 10px;
 }
 
-.outlwasdesc{
-    font-size: 15px;
+.juego h3 {
+  font-size: 30px;
+  font-family: "Michroma", sans-serif;
+  font-weight: bold;
 }
 
-/*Survivor*/
-
-.survivor{
-  display: flex;
-  align-items: center;
-}
-
-.survivorjpg{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 298px;
-   height: 200px;   
-}
-
-.survivordesc{
-    font-size: 15px;
-}
-
-/* Lego star wars skywalker saga*/
-
-.skywalker-saga{
-  display: flex;
-  align-items: center;
-}
-
-.skywalkersagajpg{
-   margin-top: 5px;
-   margin-right: 20px;
-   width: 200px;
-   height: 200px; 
-}
-
-.skywalkersagadesc{
-  font-size: 15px;  
+.juego p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 17px;
+  padding: 20px;
 }
 
 /*CONTACTO*/
@@ -592,7 +518,7 @@ form {
 
 /*personajes*/
   .card img {
-    height: 300px; /* más chico que en escritorio */
+    height: 300px; 
   }
 
   .text {
