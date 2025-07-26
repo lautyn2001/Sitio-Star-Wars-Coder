@@ -626,7 +626,7 @@ form {
     padding: 0 15px;
     font-size: 15px;
   }
-}
+
 
 /*personajes*/
 .card img {
@@ -646,17 +646,4 @@ form {
   font-size: 15px;
 }
 
-/*contacto*/
-#nombre,
-#mail,
-#mensaje {
-  width: 90%;
-}
-
-.boton {
-  width: 70%;
-}
-
-.consulta {
-  padding: 0 20px;
 }
