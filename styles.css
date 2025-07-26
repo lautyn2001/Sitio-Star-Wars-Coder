@@ -432,8 +432,8 @@ form {
     font-size: 18px;
   }
 
-/*peliculas*/
-.intro-pelis {
+  /*peliculas*/
+  .intro-pelis {
     font-size: 14px;
     text-align: justify;
   }
@@ -479,7 +479,7 @@ form {
     padding: 8px;
   }
 
-    /*juegos*/
+  /*juegos*/
   .juego {
     display: flex;
     flex-direction: column;
@@ -494,14 +494,11 @@ form {
     margin-bottom: 10px;
   }
 
-  
-
   .juego p,
   .juego h3 {
     padding: 0 15px;
     font-size: 15px;
   }
-
 
   /*contacto*/
   #nombre,
@@ -606,7 +603,7 @@ form {
 
   /*peliculas*/
 
-.episodio {
+  .episodio {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -631,50 +628,35 @@ form {
   }
 }
 
-  /*personajes*/
-  .card img {
-    height: 300px;
-  }
+/*personajes*/
+.card img {
+  height: 300px;
+}
 
-  .text {
-    font-size: 0.9em;
-    padding: 10px;
-  }
+.text {
+  font-size: 0.9em;
+  padding: 10px;
+}
 
-  /*juegos*/
-  .juego {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
+/*juegos*/
 
-  .juego-img {
-    width: 80%;
-    height: auto;
-    margin-bottom: 10px;
-  }
+.juego p,
+.juego h3 {
+  padding: 0 15px;
+  font-size: 15px;
+}
 
+/*contacto*/
+#nombre,
+#mail,
+#mensaje {
+  width: 90%;
+}
 
+.boton {
+  width: 70%;
+}
 
-  .juego p,
-  .juego h3 {
-    padding: 0 15px;
-    font-size: 15px;
-  }
-
-
-  /*contacto*/
-  #nombre,
-  #mail,
-  #mensaje {
-    width: 90%;
-  }
-
-  .boton {
-    width: 70%;
-  }
-
-  .consulta {
-    padding: 0 20px;
-  }
+.consulta {
+  padding: 0 20px;
 }
