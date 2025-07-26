@@ -627,23 +627,20 @@ form {
     font-size: 15px;
   }
 
+  /*personajes*/
+  .card img {
+    height: 300px;
+  }
 
-/*personajes*/
-.card img {
-  height: 300px;
-}
+  .text {
+    font-size: 0.9em;
+    padding: 10px;
+  }
 
-.text {
-  font-size: 0.9em;
-  padding: 10px;
-}
-
-/*juegos*/
-
-.juego p,
-.juego h3 {
-  padding: 0 15px;
-  font-size: 15px;
-}
-
+  /*juegos*/
+  .juego p,
+  .juego h3 {
+    padding: 0 15px;
+    font-size: 15px;
+  }
 }
