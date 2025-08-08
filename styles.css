@@ -42,18 +42,19 @@ header {
 
 /*nav header*/
 
-.nav-header {
+.nav-header ul {
   display: flex;
+  flex-direction: row;
   gap: 30px;
 }
-.nav-header a {
+.nav-header ul li a {
   text-decoration: none;
   color: white;
   font-family: "Press Start 2P", system-ui;
   font-size: 10px;
   font-weight: bold;
 }
-.nav-header a:hover {
+.nav-header ul li a:hover {
   color: rgb(251, 255, 0);
 }
 
@@ -125,7 +126,6 @@ footer {
 
 .redes {
   display: flex;
-  margin-left: 43%;
 }
 #redes ul {
   list-style: none;
@@ -366,20 +366,24 @@ form {
   background-color: #666;
 }
 
-@media (max-width: 480px) { /*Celulares*/
+@media (max-width: 480px) {
+  /*Celulares*/
   /*header*/
   header {
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .nav-header {
+  .nav-header ul{
     flex-direction: column;
     width: 100%;
     align-items: flex-start;
     gap: 10px;
     margin-top: 10px;
     align-items: center;
+    text-align: center;
+    justify-content: center
+
   }
 
   .inicio {
@@ -528,7 +532,8 @@ form {
   }
 }
 
-@media (max-width: 1024px) {/*Tablets*/
+@media (max-width: 1024px) {
+  /*Tablets*/
   /*header*/
   header {
     flex-direction: column;
@@ -564,8 +569,7 @@ form {
   }
 
   #redes ul {
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: center;
   }
 
   #redes li {
@@ -574,6 +578,7 @@ form {
 
   .redes {
     width: 100%;
+    justify-content: center;
   }
 
   .derechos {
